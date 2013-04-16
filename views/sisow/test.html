@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+{{=nav_helper}}
+<h1>{{=title}}</h1>
+{{for message in messages:}}
+	{{=message}} <br><br>
+{{pass}}
+
+<b>RESULT:</b>
+
+<pre>
+{{=XML(result)}}
+</pre>

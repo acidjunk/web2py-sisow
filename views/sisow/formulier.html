@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+
+{{=H1(title)}}
+
+{{=P(message)}}
+{{=BR()}}
+{{if submit:}}
+{{run_demo(amount=form.vars.amount, issuerid=form.vars.bank, description=form.vars.description)}}
+{{else:}}
+{{=form}}
+{{pass}}
